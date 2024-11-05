@@ -3,10 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Afiliación</title>
   </head>
   <body>
-    
+    <h1>Vení al Gym! 💪🏼</h1>
+
+    <form action="https://postman-echo.com/post" method="POST" target="_blank">
+      
+      <fieldset>
+        <legend>🙋🏼‍♂️ Datos Personales 👀</legend>
+
+        <div>
+          <label for="lbl-nombre">Nombre:*</label>
+          <input type="text" name="nombre" id="lbl-nombre" required>
+        </div>
+
+        <div>
+          <label for="lbl-apellido">Apellido:*</label>
+          <input type="text" name="apellido" id="lbl-apellido" required>
+        </div>
+
+        <div>
+          <label for="lbl-documento">Documento:*</label>
+          <input type="text" name="documento" id="lbl-documento" required>
+        </div>
+
+        <div>
+          <label for="lbl-nacionalidad">Nacionalidad:*</label>
+          <select name="nacionalidad" id="lbl-nacionalidad" required>
+            <option value="" disabled selected>- Seleccionar -</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasileña">Brasileña</option>
+            <option value="Uruguaya">Uruguaya</option>
+            <option value="Otra">Otra</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="lbl-descripcion">Contanos un poco de vos...</label>
+          <textarea name="descrip" id="lbl-descripcion" cols="20" rows="2"></textarea>
+        </div>
+        
+        <div>
+          <label>Sexo: *</label><br>
+          <input type="radio" name="sexo" id="lbl-femenino" value="femenino" checked>
+          <label for="lbl-femenino">Femenino</label>
+          <input type="radio" name="sexo" id="lbl-masculino" value="masculino">
+          <label for="lbl-masculino">Masculino</label>
+          <input type="radio" name="sexo" id="lbl-otro" value="otro">
+          <label for="lbl-otro">Otro</label>
+        </div>
+      </fieldset> <!-- Cierre Datos Personales -->
+
+      <fieldset>
+        <legend>📱 Datos de Contacto 📧</legend>
+
+        <div>
+          <label for="lbl-telefono">Teléfono:</label>
+          <input type="text" placeholder="Código de área y número" name="telefono" id="lbl-telefono">
+        </div>
+
+        <div>
+          <label for="lbl-correo">Dirección de correo electrónico:*</label>
+          <input type="email" placeholder="Ej: mail@gmail.com" name="correo" id="lbl-correo" required>
+        </div>
+      </fieldset> <!-- Cierre Datos de Contacto -->
+
+      <fieldset>
+        <legend>🚴🏼 Actividades 🤸🏼‍♂️</legend>
+
+        <p>Por favor, indicá cuáles actividades te interesan.</p>
+
+        <p>Sede Palermo:</p>
+        <div>
+          <input type="checkbox" name="sede-palermo" id="sp-basquet" value="basquet">
+          <label for="sp-basquet">Básquet</label>
+          <input type="checkbox" name="sede-palermo" id="sp-boxeo" value="boxeo">
+          <label for="sp-boxeo">Boxeo</label>
+          <input type="checkbox" name="sede-palermo" id="sp-futbol" value="futbol">
+          <label for="sp-futbol">Fútbol</label>
+          <input type="checkbox" name="sede-palermo" id="sp-tenis" value="tenis">
+          <label for="sp-tenis">Tenis</label>
+        </div>
+
+        <p>Sede Rosario:</p>
+        <div>
+          <input type="checkbox" name="sede-rosario" id="sr-basquet" value="basquet">
+          <label for="sr-basquet">Básquet</label>
+          <input type="checkbox" name="sede-rosario" id="sr-futbol" value="futbol">
+          <label for="sr-futbol">Fútbol</label>
+          <input type="checkbox" name="sede-rosario" id="sr-rugby" value="rugby">
+          <label for="sr-rugby">Rugby</label>
+          <input type="checkbox" name="sede-rosario" id="sr-voley" value="voley">
+          <label for="sr-voley">Voley</label>
+        </div>
+      </fieldset> <!-- Cierre Actividades -->
+
+      <div>
+        <input type="checkbox" name="acepto-cond" id="lbl-condiciones" required>
+        <label for="lbl-condiciones">Acepto las condiciones*</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="recibir-noved" id="lbl-novedades" checked>
+        <label for="lbl-condiciones">Deseo recibir novedades</label>
+      </div>
+
+      <p>*: campo obligatorio.</p>
+
+      <button type="submit">Iniciar afiliación</button>
+      <button type="reset">Restablecer</button>
+    </form>
+
     
     
     <script type="module" src="/main.js"></script>
