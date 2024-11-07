@@ -1,0 +1,166 @@
+body{
+    background-color: #1f2023;
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1{
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    color: #e8eaed;
+    border-top: 14px solid #4d6d63;
+    border-bottom: 14px solid #4d6d63;
+    border-left: 14px solid #1f2023;
+    border-right: 14px solid #1f2023;
+    text-align: center;
+}
+
+form{
+    font-family: "Roboto", serif;
+}
+
+fieldset{
+    background-color: #d6e2de;
+    border: 2px solid #4d6d63;
+    border-radius: 5px;
+}
+
+legend{
+    background-color: #4d6d63;
+    color: #e8eaed;
+    font-variant-caps: small-caps;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+hr{
+    border-top: 13px dotted #a6c1b9;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    text-align: right;
+    color: #4d6d63;
+}
+
+textarea{
+    resize: vertical;
+    text-align: right;
+}
+
+button{
+    font-size: 18px;
+    background-color: #2b3d37;
+    border: 1px solid #4d6d63;
+    color: #a6c1b9;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.field-centrado{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.bloque{
+    display: block;
+    margin: 10px;
+}
+
+.inp-caja{
+    width: 70%;
+    border: 1px solid #4d6d63;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.act-nota{
+    font-size: 14px;
+}
+
+.field-activ{
+    padding: 15px 0px 20px 20px;
+    margin-bottom: 40px;
+}
+
+.checks-final{
+    color: #e8eaed;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.oblig{
+    color: white;
+    font-weight: bold;
+}
+
+.botones{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+.bot-inic{
+    margin-right: 15px;
+}
+
+.bot-rest{
+    margin-left: 15px;
+}
+
+input:focus{
+    background-color: #4d6d63;
+    color: white;
+    outline: 1px solid white;
+    border: 2px solid black;
+}
+
+fieldset:focus-within{
+    background-color: #a6c1b9;
+}
+
+fieldset:focus-within > legend{
+    background-color: #2b3d37;
+}
+
+select:focus{
+    outline: 1px solid white;
+    border: 2px solid black;
+}
+
+textarea:focus{
+    background-color: #4d6d63;
+    color: white;
+    outline: 1px solid white;
+    border: 2px solid black;
+}
+
+button:focus{
+    outline: 1px solid white;
+    border: 2px solid black;
+}
+
+.field-activ input:focus{
+    outline: 2px solid black;
+}
+
+.checks-final input:focus{
+    outline: 2px solid black;
+}
+
+.botones button:hover{
+    background-color: #a6c1b9;
+    color: #2b3d37;
+}
+
+.sexo-radio input{
+    outline: none;
+}
